@@ -33,7 +33,12 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 
 /* Hide default streamlit chrome */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
+[data-testid="stHeader"] { background: transparent !important; }
+/* [data-testid="stHeader"] [data-testid="stToolbar"] { visibility: hidden; } */
+[data-testid="collapsedControl"] { visibility: visible !important; display: flex !important; }
+[data-testid="stSidebarCollapseButton"] { visibility: visible !important; display: flex !important; }
+[data-testid="stHeader"] button { color: #8B92B8 !important; }
 [data-testid="stDecoration"] { display: none; }
 
 /* Headings */
