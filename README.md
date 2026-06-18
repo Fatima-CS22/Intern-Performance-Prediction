@@ -2,7 +2,7 @@
 
 A machine learning regression project that predicts intern performance scores (0–100) based on completion time, feedback rating and attendance built with Random Forest and XGBoost and deployed as an interactive Streamlit dashboard.
 
-
+🔗 **Live Demo:** [(https://intern-performance-prediction-72xoychhulacdgzecyvcvf.streamlit.app)]
 
 ## Overview
 
