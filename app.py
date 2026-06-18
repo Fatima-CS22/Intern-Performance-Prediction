@@ -33,12 +33,7 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 
 /* Hide default streamlit chrome */
-#MainMenu, footer { visibility: hidden; }
-[data-testid="stHeader"] { background: transparent !important; }
-/* [data-testid="stHeader"] [data-testid="stToolbar"] { visibility: hidden; } */
-[data-testid="collapsedControl"] { visibility: visible !important; display: flex !important; }
-[data-testid="stSidebarCollapseButton"] { visibility: visible !important; display: flex !important; }
-[data-testid="stHeader"] button { color: #8B92B8 !important; }
+/*#MainMenu, footer, header { visibility: hidden; } */
 [data-testid="stDecoration"] { display: none; }
 
 /* Headings */
@@ -87,46 +82,11 @@ h1,h2,h3,h4 { font-family: 'Syne', sans-serif !important; }
 /* Sliders */
 [data-testid="stSlider"] > div > div > div { background: #6C63FF !important; }
 
-/* File uploader — outer dropzone */
+/* File uploader */
 [data-testid="stFileUploader"] {
     background: rgba(108,99,255,0.06) !important;
     border: 1.5px dashed rgba(108,99,255,0.4) !important;
     border-radius: 12px !important;
-}
-[data-testid="stFileUploader"] section {
-    background: rgba(108,99,255,0.06) !important;
-    border: none !important;
-}
-[data-testid="stFileUploaderDropzone"] {
-    background: rgba(108,99,255,0.06) !important;
-    border: 1.5px dashed rgba(108,99,255,0.4) !important;
-    border-radius: 12px !important;
-}
-[data-testid="stFileUploaderDropzoneInstructions"] {
-    color: #B0B8D8 !important;
-}
-[data-testid="stFileUploaderDropzoneInstructions"] span,
-[data-testid="stFileUploaderDropzoneInstructions"] small {
-    color: #8B92B8 !important;
-}
-/* Browse-files / Upload button inside the dropzone */
-[data-testid="stFileUploader"] button,
-[data-testid="stBaseButton-secondary"] {
-    background: #131929 !important;
-    color: #F0F2FF !important;
-    border: 1px solid rgba(108,99,255,0.4) !important;
-    border-radius: 8px !important;
-}
-[data-testid="stFileUploader"] svg {
-    fill: #8B92B8 !important;
-}
-/* Catch-all: any raw HTML section/div Streamlit nests inside the uploader */
-[data-testid="stFileUploader"] * {
-    background-color: transparent;
-}
-[data-testid="stFileUploader"] > div,
-[data-testid="stFileUploader"] section > div {
-    background: rgba(108,99,255,0.06) !important;
 }
 
 /* Dataframe */
